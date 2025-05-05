@@ -7,40 +7,54 @@
     <meta name="viewport" content="width=device-width,intial-scale=1">
     <link rel="icon" href="images/Logo.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<!-- body is for content -->
 
+<!-- body is for content -->
 <body>
     <header class="main-header">
         <img src="images/Logo.png" class="logo">
         <nav class="main-navigation">
             <a href="index.html">Home</a>
             <div class="dropdown">
-            <a href="products.html">
-                Products
-            </a>
-            <nav class="dropdown-menu">
-                <a href="women.html">Women</a>
-                <a href="men.html">Men</a>
-                <a href="kids.html">Kids</a>
-            </nav>
-        </div>
-        <div class="dropdown">
-            <a href="services.html">Services</a>
-            <nav class="dropdown-menu">
-                <a href="shoecleaning.html">Shoe Cleaning</a>
-                <a href="customshoes.html">Custom Shoes</a>
-            </nav>
+                <a href="products.html">
+                    Products
+                </a>
+                <nav class="dropdown-menu">
+                    <a href="women.html">Women</a>
+                    <a href="men.html">Men</a>
+                    <a href="kids.html">Kids</a>
+                </nav>
+            </div>
+            <div class="dropdown">
+                <a href="services.html">Services</a>
+                <nav class="dropdown-menu">
+                    <a href="shoecleaning.html">Shoe Cleaning</a>
+                    <a href="customshoes.html">Custom Shoes</a>
+                </nav>
         </nav>
-    </div>
+        </div>
         <form class="site-search">
             <input type="search" name="keyword" id="keyword" placeholder="Search">
-            <button type="submit">Search</button>
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="sr-only">Search</span></button>
         </form>
         <nav class="user-nav">
-            <a href="account.html">Account</a>
-            <a href="wishlist.html">Wishlist</a>
-            <a href="cart.html">Cart</a>
+            <a href="account.html">
+                <i class="fa-solid fa-user"></i>
+                <span class="sr-only">Account</span>
+            </a>
+            <a href="wishlist.html">
+                <i class="fa-solid fa-heart"></i>
+                Wishlist
+            </a>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </a>
         </nav>
     </header>
     <main></main>
