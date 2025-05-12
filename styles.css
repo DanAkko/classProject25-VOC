@@ -20,6 +20,14 @@ body {
     padding-bottom: 20px;
 }
 
+.nav-button {
+    background-color: transparent;
+    color: white;
+    font-size: 1.8em;
+    border: transparent;
+    display: none;
+}
+
 .main-navigation {
     display: flex;
     flex-flow: row wrap;
@@ -54,7 +62,7 @@ body {
     display: block;
 }
 
-/* means "in .dropdown, select first "a" after dropdown, :: means sudo-element */
+/* means in .dropdown, select first "a" after dropdown, :: means sudo-element */
 .dropdown>a::after {
     content: "\25bc";
     font-size: small;
