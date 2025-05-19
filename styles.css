@@ -133,12 +133,39 @@ body {
 .featured-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    margin-top: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+    gap: 2em;
 }
 
 .card-image {
     max-width: 100%;
+
+}
+
+.card-content {
+    padding: 1em;
+}
+
+.card {
+    background-color: darkgray;
+}
+
+.card-button {
+    display: block;
+    background-color: black;
+    color: azure;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .col-4 {
     grid-column: span 4;
+}
+
+.col-3 {
+    grid-column: span 3;
 }

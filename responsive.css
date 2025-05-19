@@ -55,4 +55,15 @@
     .slide img {
         aspect-ratio: 1/1;
     }
+
+    .featured-grid {
+        grid-template-columns: 1fr;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .col-4, .col-3 {
+        grid-column: span 1;
+    }
+
 }
