@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="script.js"></script>
 </head>
 
@@ -64,7 +66,50 @@
             </a>
         </nav>
     </header>
-    <main></main>
+    <!-- slideshow -->
+    <div class="carousel"
+        data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": true }'>
+        <div class="slide">
+            <img src="images/slides/pexels-mnzoutfits-1598505.jpg" alt="shoes">
+        </div>
+        <div class="slide">
+            <img src="images/slides/pexels-mnzoutfits-1598508.jpg" alt="shoes">
+        </div>
+        <div class="slide">
+            <img src="images/slides/pexels-mstudio-360817-1240892.jpg" alt="shoes">
+        </div>
+        <div class="slide">
+            <img src="images/slides/pexels-pixabay-267320.jpg" alt="shoes">
+        </div>
+        <div class="slide">
+            <img src="images/slides/pexels-webdonut-19090.jpg" alt="shoes">
+        </div>
+    </div>
+    <main>
+        <div class="featured-grid">
+            <div class="card col-4">
+                <img class="card-image" src="images/slides/pexels-wolrider-18368104.jpg" alt="casual shoes">
+                <div class="card-content">
+                    <h3 class="card-title">Casual</h3>
+                    <a href="#" class="card-button">Shop Casual</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="images/slides/pexels-wolrider-18188504.jpg" alt="casual shoes">
+                <div class="card-content">
+                    <h3 class="card-title">Casual</h3>
+                    <a href="#" class="card-button">Shop Casual</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="images/slides/pexels-jayson-hinrichsen-86844013-18361562.jpg" alt="casual shoes">
+                <div class="card-content">
+                    <h3 class="card-title">Casual</h3>
+                    <a href="#" class="card-button">Shop Casual</a>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer></footer>
 </body>
 

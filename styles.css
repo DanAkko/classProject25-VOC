@@ -2,6 +2,7 @@ body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: gray;
+    overflow-y: scroll;
 }
 
 .main-header {
@@ -112,4 +113,32 @@ body {
 .site-search button {
     padding: 0.5em;
     border: 1px solid transparent;
+}
+
+.slide {
+    width: 100%;
+}
+
+.slide img {
+    max-width: 100%;
+    /* below code ensures all images have the same aspect ratio */
+    aspect-ratio: 16/6;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+/* content grid */
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.card-image {
+    max-width: 100%;
+}
+
+.col-4 {
+    grid-column: span 4;
 }
