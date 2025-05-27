@@ -3,6 +3,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: gray;
     overflow-y: scroll;
+    min-height: 100vh;
+}
+
+.contact-page {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .main-header {
@@ -78,6 +84,10 @@ body {
     max-height: 0px;
     overflow: hidden;
     min-width: 100%;
+
+    /* by default, elements have a z-index value of 0 */
+    /* by setting z-index to 999, it brings the dropdown menu to the front */
+    z-index: 999;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -168,4 +178,80 @@ body {
 
 .col-3 {
     grid-column: span 3;
+}
+
+.main-footer {
+    background-color: rgb(31, 28, 20);
+    margin-top: 5em;
+}
+
+.social-nav a {
+    color: white;
+    font-size: 2em;
+}
+
+.social-nav a:hover {
+    color: gray;
+}
+
+.social-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.footer-container {
+    /* 2em for top and bottom, 4em for left and right */
+    padding: 1.5em 4em;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-nav {
+    display: flex;
+    flex-flow: column nowrap;
+    color: white;
+}
+
+.footer-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    font-size: 1.1em;
+}
+
+.footer-nav h4 {
+    padding: 0.6em;
+    margin: 0px;
+    text-decoration: underline;
+}
+
+/* styling an ID uses a hash instead of a period */
+#contact-form label {
+    display: block;
+    font-weight: bold;
+}
+
+#contact-form input {
+    display: block;
+    width: 30%;
+    margin-bottom: 1em;
+    padding: 0.3em;
+    box-sizing: border-box;
+}
+
+#contact-form textarea {
+    display: block;
+    width: 80%;
+    padding: 0.5em;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+#map {
+    width: 100%;
 }

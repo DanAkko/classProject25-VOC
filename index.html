@@ -24,7 +24,7 @@
             <span class="sr-only">Menu</span>
             <i class="fa-solid fa-bars"></i>
         </button>
-        <img src="images/Logo.png" class="logo">
+        <img src="images/Logo.png" class="logo" alt="TipToes Logo">
         <nav class="main-navigation">
             <a href="index.html">Home</a>
             <div class="dropdown">
@@ -43,8 +43,8 @@
                     <a href="shoecleaning.html">Shoe Cleaning</a>
                     <a href="customshoes.html">Custom Shoes</a>
                 </nav>
+            </div>
         </nav>
-        </div>
         <form class="site-search">
             <input type="search" name="keyword" id="keyword" placeholder="Search">
             <button type="submit">
@@ -54,6 +54,7 @@
         <nav class="user-nav">
             <a href="account.html">
                 <i class="fa-solid fa-user"></i>
+                <!-- span and sr-only makes it so the text doesn't appear but screen readers will still read the text -->
                 <span class="sr-only">Account</span>
             </a>
             <a href="wishlist.html">
@@ -115,32 +116,66 @@
                     <h3 class="card-title">Wendywei</h3>
                     <a href="#" class="card-button">Detail</a>
                 </div>
+            </div>
+            <div class="card col-3">
+                <img class="card-image" src="images/slides/pexels-wendywei-12511453.jpg" alt="casual shoes">
+                <div class="card-content">
+                    <h3 class="card-title">Wendywei</h3>
+                    <a href="#" class="card-button">Detail</a>
                 </div>
-                <div class="card col-3">
-                    <img class="card-image" src="images/slides/pexels-wendywei-12511453.jpg" alt="casual shoes">
-                    <div class="card-content">
-                        <h3 class="card-title">Wendywei</h3>
-                        <a href="#" class="card-button">Detail</a>
-                    </div>
+            </div>
+            <div class="card col-3">
+                <img class="card-image" src="images/slides/pexels-wendywei-12511453.jpg" alt="casual shoes">
+                <div class="card-content">
+                    <h3 class="card-title">Wendywei</h3>
+                    <a href="#" class="card-button">Detail</a>
                 </div>
-                <div class="card col-3">
-                    <img class="card-image" src="images/slides/pexels-wendywei-12511453.jpg" alt="casual shoes">
-                    <div class="card-content">
-                        <h3 class="card-title">Wendywei</h3>
-                        <a href="#" class="card-button">Detail</a>
-                    </div>
-                </div>
-                <div class="card col-3">
-                    <img class="card-image" src="images/slides/pexels-wendywei-12511453.jpg" alt="casual shoes">
-                    <div class="card-content">
-                        <h3 class="card-title">Wendywei</h3>
-                        <a href="#" class="card-button">Detail</a>
-                    </div>
+            </div>
+            <div class="card col-3">
+                <img class="card-image" src="images/slides/pexels-wendywei-12511453.jpg" alt="casual shoes">
+                <div class="card-content">
+                    <h3 class="card-title">Wendywei</h3>
+                    <a href="#" class="card-button">Detail</a>
                 </div>
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <nav class="social-nav">
+                <a href="https://facebook.com">
+                    <!-- span and sr-only makes it so the text doesn't appear but screen readers will still read the text -->
+                    <span class="sr-only">Facebook</span>
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="https://instagram.com">
+                    <span class="sr-only">Instagram</span>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://youtube.com">
+                    <span class="sr-only">YouTube</span>
+                    <i class="fa-brands fa-square-youtube"></i>
+                </a>
+                <a href="https://tiktok.com">
+                    <span class="sr-only">TikTok</span>
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </nav>
+            <nav class="footer-nav">
+                <h4>Site Navigation</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <nav class="footer-nav">
+                <h4>Policies</h4>
+                <a href="#">Delivery</a>
+                <a href="#">Exchange</a>
+                <a href="#">Return</a>
+            </nav>
+        </div>
+
+    </footer>
 </body>
 
 </html>

@@ -1,40 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- head is for metadata -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="icon" href="images/sharkicon.png">
+    <title>Tip Toe Soles Contact</title>
+    <meta name="viewport" content="width=device-width,intial-scale=1">
+    <link rel="icon" href="images/Logo.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
-<body>
-    <nav id="main-nav">
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <p>
-        Email us at <a href="mailto:info@example.com">info@example.com</a>  
-    </p>
-    <p>
-        Call us on <a href="tel:0400000000">0400 000 000</a>
-    </p>
-    <p>
-        Come and visit us <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6629.296823424029!2d151.1849472765093!3d-33.82138517324478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12af1fe3b9b887%3A0x6fda02f3cc79cba1!2sTAFE%20NSW%20-%20St%20Leonards!5e0!3m2!1sen!2sau!4v1740992397219!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </p>
-    <form method="post" action="https://example.com/contact">
-        <label for="first">Your First Name</label><br>
-        <input type="text" name="first name" id="first"><br>
-        <label for="email">Your Email Address</label><br>
-        <input type="email" name="email" id="email">
-        <!-- checkbox -->
-        <input type="checkbox" name="preference" id="pref" checked>
-        <label for="pref">Yes, I like spam</label>
-        <button type="submit">Send</button>
-        <button type="reset">Cancel</button>
-    </form>
+<!-- body is for content -->
+
+<body class="contact-page">
+    <header class="main-header">
+        <button class="nav-button">
+            <span class="sr-only">Menu</span>
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <img src="images/Logo.png" class="logo" alt="TipToes Logo">
+        <nav class="main-navigation">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="products.html">
+                    Products
+                </a>
+                <nav class="dropdown-menu">
+                    <a href="women.html">Women</a>
+                    <a href="men.html">Men</a>
+                    <a href="kids.html">Kids</a>
+                </nav>
+            </div>
+            <div class="dropdown">
+                <a href="services.html">Services</a>
+                <nav class="dropdown-menu">
+                    <a href="shoecleaning.html">Shoe Cleaning</a>
+                    <a href="customshoes.html">Custom Shoes</a>
+                </nav>
+            </div>
+        </nav>
+        <form class="site-search">
+            <input type="search" name="keyword" id="keyword" placeholder="Search">
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="sr-only">Search</span></button>
+        </form>
+        <nav class="user-nav">
+            <a href="account.html">
+                <i class="fa-solid fa-user"></i>
+                <!-- span and sr-only makes it so the text doesn't appear but screen readers will still read the text -->
+                <span class="sr-only">Account</span>
+            </a>
+            <a href="wishlist.html">
+                <i class="fa-solid fa-heart"></i>
+                <span class="sr-only">Wishlist</span>
+            </a>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="sr-only">Cart</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="featured-grid">
+            <div class="card col-4">
+                <div class="card-content">
+                    <h3 class="card-title">Contact Us</h3>
+                    <p>
+                    <address>
+                        100 Main Street<br>
+                        Newcastle NSW 2300<br>
+                        Australia
+                    </address>
+                    </p>
+                    <a href="tel:0293001234">Call Us</a>
+                </div>
+            </div>
+            <div class="card col-4">
+
+                <div class="card-content">
+                    <h3 class="card-title">Where To Find Us</h3>
+                    <iframe id="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6629.296821350006!2d151.18752220000002!3d-33.8213852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12af1fe3b9b887%3A0x6fda02f3cc79cba1!2sTAFE%20NSW%20-%20St%20Leonards!5e0!3m2!1sen!2sau!4v1748340143311!5m2!1sen!2sau"
+                        width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="card col-4">
+
+                <div class="card-content">
+                    <h3 class="card-title">Provide Your Feedback</h3>
+                    <form id="contact-form" method="post" action="https://example.com/form">
+                        <label for="name">Name:</label>
+                        <input text="text" name="name" id="name" placeholder="Your Name">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Your Email">
+                        <label for="message">Message:</label>
+                        <!-- cols means how many characters across, rows is how many lines are shown -->
+                        <!-- defining cols and rows here can help when CSS stylesheet is broken or not available -->
+                        <textarea cols="40" rows="5" name="message" id="message"
+                            placeholder="Write your message here!"></textarea>
+                        <button type="submit" class="card-button">Send</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <nav class="social-nav">
+                <a href="https://facebook.com">
+                    <!-- span and sr-only makes it so the text doesn't appear but screen readers will still read the text -->
+                    <span class="sr-only">Facebook</span>
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="https://instagram.com">
+                    <span class="sr-only">Instagram</span>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://youtube.com">
+                    <span class="sr-only">YouTube</span>
+                    <i class="fa-brands fa-square-youtube"></i>
+                </a>
+                <a href="https://tiktok.com">
+                    <span class="sr-only">TikTok</span>
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </nav>
+            <nav class="footer-nav">
+                <h4>Site Navigation</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <nav class="footer-nav">
+                <h4>Policies</h4>
+                <a href="#">Delivery</a>
+                <a href="#">Exchange</a>
+                <a href="#">Return</a>
+            </nav>
+        </div>
+
+    </footer>
 </body>
 
 </html>

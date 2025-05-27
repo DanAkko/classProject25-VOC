@@ -66,4 +66,7 @@
         grid-column: span 1;
     }
 
+    .footer-container {
+        justify-content: center;
+    }
 }
