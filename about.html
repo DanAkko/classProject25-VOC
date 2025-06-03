@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head is for metadata -->
+
+<head>
+    <title>Tip Toe Soles About Us</title>
+    <meta name="viewport" content="width=device-width,intial-scale=1">
+    <link rel="icon" href="images/Logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<!-- body is for content -->
+
+<body>
+    <header class="main-header">
+        <button class="nav-button">
+            <span class="sr-only">Menu</span>
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="index.html">
+            <img src="images/Logo.png" class="logo" alt="TipToes Logo">
+        </a>
+        <nav class="main-navigation">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="products.html">
+                    Products
+                </a>
+                <nav class="dropdown-menu">
+                    <a href="women.html">Women</a>
+                    <a href="men.html">Men</a>
+                    <a href="kids.html">Kids</a>
+                </nav>
+            </div>
+            <div class="dropdown">
+                <a href="services.html">Services</a>
+                <nav class="dropdown-menu">
+                    <a href="shoecleaning.html">Shoe Cleaning</a>
+                    <a href="customshoes.html">Custom Shoes</a>
+                </nav>
+            </div>
+        </nav>
+        <form class="site-search">
+            <input type="search" name="keyword" id="keyword" placeholder="Search">
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="sr-only">Search</span></button>
+        </form>
+        <nav class="user-nav">
+            <a href="account.html">
+                <i class="fa-solid fa-user"></i>
+                <!-- span and sr-only makes it so the text doesn't appear but screen readers will still read the text -->
+                <span class="sr-only">Account</span>
+            </a>
+            <a href="wishlist.html">
+                <i class="fa-solid fa-heart"></i>
+                <span class="sr-only">Wishlist</span>
+            </a>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="sr-only">Cart</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="aboutus-grid">
+        <div class="featured-grid">
+            <div class="card col-4">
+                <img class="aboutus-image" src="images/slides/pexels-shvetsa-history3.jpg" alt="casual shoes">
+                <div class="card-content">
+                    <h3 class="card-title">Who We Are</h3>
+                    <p>Tip Toe Soles is a vibrant, family-run shoe company blending tradition with innovation in every step. Known for their signature flexible, noise-dampening soles and understated elegance, they cater to a global clientele who value both comfort and style. The business remains rooted in its artisanal heritage, with each pair reflecting a commitment to sustainable materials and meticulous craftsmanship. Now led by the third generation of the Moretti family, Tip Toe Soles continues to launch limited-edition collections inspired by music, movement, and urban life, while maintaining a loyal community of artists, dancers, and everyday dreamers who walk their own path—quietly, confidently, and always a step ahead.</p>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img class="aboutus-image" src="images/slides/pexels-chris-f-history2.jpg" alt="casual shoes">
+                <div class="card-content">
+                    <h3 class="card-title">Our History</h3>
+                    <p>Tip Toe Soles began in 1972 in the bustling suburb of Carlton, Melbourne, when shoemaker and jazz enthusiast Leo Moretti noticed a peculiar problem among local musicians: their shoes were too stiff for late-night gigs, making it hard for them to “tiptoe” quietly off stage or tap along to the rhythm. Inspired by the improvisational spirit of jazz, Leo set out to create a shoe that was both flexible and stylish, allowing wearers to move with ease and grace—whether on stage or on the street.</p>
+                </div>
+            </div>
+            <div class="card col-4">
+                <img class="aboutus-image" src="images/slides/pexels-olly-history4.jpg" alt="casual shoes">
+                <div class="card-content">
+                    <h3 class="card-title">Our Legacy</h3>
+                    <p>Today, Tip Toe Soles is still family-owned and operated, with Leo’s grandchildren now involved in design and marketing. The company remains committed to its founding principles: shoes that let you move freely, crafted with care, and designed to let you “step softly, dream boldly.” Each pair carries a discreet embossed note on the insole: “For those who walk their own path, one quiet step at a time.”</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <nav class="social-nav">
+                <a href="https://facebook.com">
+                    <!-- span and sr-only makes it so the text doesn't appear but screen readers will still read the text -->
+                    <span class="sr-only">Facebook</span>
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="https://instagram.com">
+                    <span class="sr-only">Instagram</span>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://youtube.com">
+                    <span class="sr-only">YouTube</span>
+                    <i class="fa-brands fa-square-youtube"></i>
+                </a>
+                <a href="https://tiktok.com">
+                    <span class="sr-only">TikTok</span>
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </nav>
+            <nav class="footer-nav">
+                <h4>Site Navigation</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <nav class="footer-nav">
+                <h4>Policies</h4>
+                <a href="#">Delivery</a>
+                <a href="#">Exchange</a>
+                <a href="#">Return</a>
+            </nav>
+        </div>
+
+    </footer>
+</body>
+
+</html>

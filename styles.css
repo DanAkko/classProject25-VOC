@@ -159,8 +159,7 @@ body {
 
 .card-image {
     max-width: 100%;
-    aspect-ratio: 11/16;
-
+    aspect-ratio: 6/10;
 }
 
 .card-content {
@@ -188,6 +187,11 @@ body {
     text-decoration: none;
     border-radius: 5px;
     max-width: 100%;
+}
+
+
+.card-content p {
+    font-size: 18px;
 }
 
 .card-button:hover {
@@ -290,4 +294,13 @@ body {
     display: flex;
     flex-flow: column nowrap;
     font-size: 1.4em;
+}
+
+#aboutus-grid .card-image {
+    max-height: 20%;
+}
+
+.aboutus-image {
+    max-width: 100%;
+    aspect-ratio: 4/3
 }
